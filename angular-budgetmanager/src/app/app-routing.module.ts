@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ReportsComponent } from './pages/reports/reports.component';
 import { SavingsComponent } from './pages/savings/savings.component';
 import { SummaryComponent } from './pages/summary/summary.component';
+import { IncomesTableComponent } from './pages/incomes-table/incomes-table.component';
 
 
 const routes: Routes = [{
@@ -17,6 +18,10 @@ const routes: Routes = [{
 {
   path: 'savings',
   component: SavingsComponent
+},
+{
+  path: 'reports/incomes',
+  component: IncomesTableComponent
 },
 ];
 

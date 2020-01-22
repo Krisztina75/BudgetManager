@@ -1,19 +1,23 @@
 <!-- Side nav -->
-<div class="sidenav">
-  <a routerLink="/summary">
-    <img class="icon" title="SUMMARY" src="../assets/images/summary.png">
-  </a>
-  <a routerLink="/reports">
-    <img class="icon" title="REPORTS" src="../assets/images/reports.png">
-  </a>
-  <a routerLink="/savings">
-    <img class="icon" title="SAVINGS" src="../assets/images/savings.png">
-  </a>
-  <a routerLink="/">
-    <img class="icon" title="LOGOUT" src="../assets/images/logout.png">
-  </a>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1 sidenav">
+      <a routerLink="/summary">
+        <img class="icon" title="SUMMARY" src="../assets/images/summary.png">
+      </a>
+      <a routerLink="/reports">
+        <img class="icon" title="REPORTS" src="../assets/images/reports.png">
+      </a>
+      <a routerLink="/savings">
+        <img class="icon" title="SAVINGS" src="../assets/images/savings.png">
+      </a>
+      <a routerLink="/">
+        <img class="icon" title="LOGOUT" src="../assets/images/logout.png">
+      </a>
+    </div>
+    <div class="col-11 offset-1 main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-
-<router-outlet></router-outlet>
-
 <script src="../assets/js/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
