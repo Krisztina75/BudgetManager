@@ -46,45 +46,45 @@
   border-collapse: collapse;
 }
 
-td:nth-child(1),
-th:nth-child(1) {
+table.table-fixed td:nth-child(1),
+table.table-fixed th:nth-child(1) {
   width: 50px;
 }
 
-td:nth-child(2),
-th:nth-child(2) {
+table.table-fixed td:nth-child(2),
+table.table-fixed th:nth-child(2) {
   width: 175px;
 }
 
-td:nth-child(3),
-th:nth-child(3) {
+table.table-fixed td:nth-child(3),
+table.table-fixed th:nth-child(3) {
   width: 185px;
 }
 
-td:nth-child(4),
-th:nth-child(4) {
+table.table-fixed td:nth-child(4),
+table.table-fixed th:nth-child(4) {
   width: 100px;
 }
 
-td:nth-child(5),
-th:nth-child(5) {
+table.table-fixed td:nth-child(5),
+table.table-fixed th:nth-child(5) {
   width: 320px;
 }
 
-td:nth-child(6) {
+table.table-fixed td:nth-child(6) {
   width: 130px;
 }
 
-th:nth-child(6) {
+table.table-fixed th:nth-child(6) {
   width: 150px;
 }
 
-thead tr {
+table.table-fixed thead tr {
   display: block;
   position: relative;
 }
 
-tbody {
+table.table-fixed tbody {
   display: block;
   overflow: auto;
   width: 100%;
@@ -97,6 +97,10 @@ td {
 
 .text-align-right {
   text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 #cost-header {
