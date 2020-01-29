@@ -28,12 +28,12 @@
   <div class="row">
     <div class="col-12">
       <table class="table table-warning table-striped mt-3 table-fixed">
-        <thead>
+        <thead id="income-header">
           <tr>
             <th>ID</th>
             <th>Registration Date</th>
             <th>Date of Payment</th>
-            <th>Amount</th>
+            <th class="text-align-right">Amount</th>
             <th>Description</th>
             <th>Category</th>
           </tr>
@@ -43,7 +43,7 @@
             <td>{{item.ID}}</td>
             <td>{{item.RegistrationDate}}</td>
             <td>{{item.DateOfPayment}}</td>
-            <td>{{item.Amount}}</td>
+            <td class="text-align-right">{{item.Amount}}</td>
             <td>{{item.Description}}</td>
             <td>{{item.Category}}</td>
           </tr>

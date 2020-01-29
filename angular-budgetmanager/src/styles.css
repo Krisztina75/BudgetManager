@@ -98,3 +98,11 @@ td {
 .text-align-right {
   text-align: right;
 }
+
+#cost-header {
+  background-color: #9c7500;
+}
+
+#income-header {
+  background-color: #af3500;
+}
