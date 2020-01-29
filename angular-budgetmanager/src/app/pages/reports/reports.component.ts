@@ -15,7 +15,6 @@ export class ReportsComponent implements OnInit {
   }
 
   ngOnInit() {
-  console.log(this.allData);
   }
 
 }
