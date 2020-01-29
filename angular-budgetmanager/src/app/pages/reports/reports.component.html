@@ -26,14 +26,14 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-12">
-      <table class="table table-primary table-striped mt-3 table-fixed">
+    <div class="col-9">
+      <table class="table table-primary table-striped table-fixed mt-3">
         <thead>
           <tr>
             <th>ID</th>
             <th>Registration Date</th>
             <th>Date of Payment</th>
-            <th>Amount</th>
+            <th class="text-align-right">Amount</th>
             <th>Description</th>
             <th>Category</th>
           </tr>
@@ -43,12 +43,15 @@
             <td>{{item.ID}}</td>
             <td>{{item.RegistrationDate}}</td>
             <td>{{item.DateOfPayment}}</td>
-            <td>{{item.Amount}}</td>
+            <td class="text-align-right">{{item.Amount}}</td>
             <td>{{item.Description}}</td>
             <td>{{item.Category}}</td>
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="col-3 mt-3">
+      <p>ide jön majd a kategóriánkénti összesítő</p>
     </div>
   </div>
 </div>

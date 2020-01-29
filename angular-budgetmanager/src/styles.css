@@ -41,7 +41,7 @@
 }
 
 .table-fixed {
-  width: 930px;
+  width: 980px;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -71,9 +71,12 @@ th:nth-child(5) {
   width: 320px;
 }
 
-td:nth-child(6),
+td:nth-child(6) {
+  width: 130px;
+}
+
 th:nth-child(6) {
-  width: 100px;
+  width: 150px;
 }
 
 thead tr {
@@ -90,4 +93,8 @@ tbody {
 
 td {
   font-size: 14px;
+}
+
+.text-align-right {
+  text-align: right;
 }
