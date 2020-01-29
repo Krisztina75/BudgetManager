@@ -12,7 +12,7 @@ export class BaseService {
   constructor(protected http: HttpClient) { }
 
   getUrl(): any {
-    let url = `${this.baseUrl}${this.entity}`;
+    let url = `${this.baseUrl}/${this.entity}`;
     return url;
   }
 
