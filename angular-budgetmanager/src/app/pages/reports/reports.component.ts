@@ -11,7 +11,9 @@ export class ReportsComponent implements OnInit {
   allData: Cost[] = [];
 
   constructor(private costService: CostsService) {
-    this.costService.getAll().subscribe(costs => this.allData = costs)
+    this.costService.getAll().subscribe(costs => {
+      this.allData = costs.allCostItem;
+    })
   }
 
   ngOnInit() {
