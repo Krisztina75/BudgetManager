@@ -32,4 +32,15 @@ module.exports = class DB {
     const result = await this.conn.query(sql);
     return result;
   }
+
+  // async allCostCategories(data) {
+  //   const sql = `
+  //   SELECT '${data.category}' FROM costs
+  //   GROUPBY '${data.category}'
+  //   `;
+
+  //   const result = await this.conn.query(sql);
+  //   console.log(`Kategóriák: ${result}`);
+  //   return result;
+  // }
 };

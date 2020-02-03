@@ -13,8 +13,11 @@ router.get('/', (req, res, next) => {
 
 /* GET api/costs page. */
 router.get('/costs', async (req, res, next) => {
-  const result = await db.readCosts();
-  res.json(result);
+  const costResults = {};
+
+  costResults.allCostItem = await db.readCosts();
+  // costResults.categories = await db.allCostCategories();
+  res.json(costResults);
 });
 
 /* GET api/incomes page. */
