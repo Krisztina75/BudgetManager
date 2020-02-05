@@ -9,6 +9,7 @@ import { SummaryComponent } from './pages/summary/summary.component';
 import { ReportsComponent } from './pages/reports/reports.component';
 import { SavingsComponent } from './pages/savings/savings.component';
 import { IncomesTableComponent } from './pages/incomes-table/incomes-table.component';
+import { SumPipe } from './pipe/sum.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IncomesTableComponent } from './pages/incomes-table/incomes-table.compo
     SummaryComponent,
     ReportsComponent,
     SavingsComponent,
-    IncomesTableComponent
+    IncomesTableComponent,
+    SumPipe
   ],
   imports: [
     BrowserModule,

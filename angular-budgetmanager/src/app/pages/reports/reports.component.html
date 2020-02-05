@@ -63,6 +63,10 @@
             <td>{{category.Category}}</td>
             <td class="amount">{{category.amountByCategory | number: decimal}} Ft</td>
           </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td class="amount">{{allData | sum:'Amount' | number: decimal}} Ft</td>
+          </tr>
         </tbody>
       </table>
     </div>

@@ -113,7 +113,7 @@ td {
 }
 
 .table-sm td {
-  padding: 6px 20px 0px 20px;
+  padding: 3px 20px 3px 20px;
 }
 
 .table-sm thead th {
@@ -127,3 +127,9 @@ td {
   text-align: right;
 }
 
+.table-sm tr.total td {
+  font-weight: bold;
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #165a6b;
+  border-bottom: 1px solid #165a6b;
+}
