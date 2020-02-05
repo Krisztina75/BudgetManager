@@ -8,7 +8,7 @@ import { IncomesTableComponent } from './pages/incomes-table/incomes-table.compo
 
 
 const routes: Routes = [{
-  path: 'summary',
+  path: '',
   component: SummaryComponent
 },
 {
