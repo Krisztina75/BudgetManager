@@ -51,17 +51,17 @@
       </table>
     </div>
     <div class="col-3 mt-3">
-      <table class="table table-dark">
-        <thead class="text-align-center">
+      <table class="table table-dark table-borderless table-sm">
+        <thead>
           <tr>
             <th>Category</th>
-            <th>Spending</th>
+            <th class="amount">Spending</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let category of allCategories">
             <td>{{category.Category}}</td>
-            <td>amount</td>
+            <td class="amount">{{category.amountByCategory | number: decimal}} Ft</td>
           </tr>
         </tbody>
       </table>

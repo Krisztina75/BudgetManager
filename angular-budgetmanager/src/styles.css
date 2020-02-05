@@ -111,3 +111,19 @@ td {
 #income-header {
   background-color: #af3500;
 }
+
+.table-sm td {
+  padding: 6px 20px 0px 20px;
+}
+
+.table-sm thead th {
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #165a6b;
+  border-bottom: 1px solid #165a6b;
+}
+
+.table-sm th.amount,
+.table-sm td.amount {
+  text-align: right;
+}
+

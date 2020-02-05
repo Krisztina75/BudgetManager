@@ -11,12 +11,13 @@ import { Category } from 'src/app/model/category';
 export class ReportsComponent implements OnInit {
   allData: Cost[] = [];
   allCategories: Category[] = [];
+  amountByCategory: number;
 
   constructor(private costService: CostsService) {
     this.costService.getAll().subscribe(costs => {
       this.allData = costs.allCostItem;
       this.allCategories = costs.categories;
-      // console.log(this.allCategories);
+      console.log(this.allCategories);
     })
   }
 
