@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cost } from 'src/app/model/cost';
 import { CostsService } from 'src/app/service/costs.service';
+import { Category } from 'src/app/model/category';
 
 @Component({
   selector: 'app-reports',
@@ -9,10 +10,13 @@ import { CostsService } from 'src/app/service/costs.service';
 })
 export class ReportsComponent implements OnInit {
   allData: Cost[] = [];
+  allCategories: Category[] = [];
 
   constructor(private costService: CostsService) {
     this.costService.getAll().subscribe(costs => {
       this.allData = costs.allCostItem;
+      this.allCategories = costs.categories;
+      // console.log(this.allCategories);
     })
   }
 
