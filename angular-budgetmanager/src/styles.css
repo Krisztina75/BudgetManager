@@ -133,3 +133,8 @@ td {
   border-top: 1px solid #165a6b;
   border-bottom: 1px solid #165a6b;
 }
+
+table.table-sm td:nth-child(1),
+table.table-sm th:nth-child(1) {
+  width: 170px;
+}
