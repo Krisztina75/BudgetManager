@@ -22,7 +22,7 @@ const routes: Routes = [{
   component: SavingsComponent
 },
 {
-  path: 'reports/incomes',
+  path: 'reports/income',
   component: IncomesTableComponent
 },
 {
