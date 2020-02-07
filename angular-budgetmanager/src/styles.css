@@ -132,9 +132,12 @@ td {
   padding: 12px 20px 12px 20px;
   border-top: 1px solid #165a6b;
   border-bottom: 1px solid #165a6b;
+  color: #af3500, #9c7500, #a51675, #1e48d1, #ff0202, #3d9415, #f5f241
 }
 
 table.table-sm td:nth-child(1),
 table.table-sm th:nth-child(1) {
   width: 170px;
 }
+
+
