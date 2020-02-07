@@ -11,7 +11,6 @@ import { Category } from 'src/app/model/category';
 export class IncomesTableComponent implements OnInit {
   allData: Income[] = [];
   allCategories: Category[] = [];
-  iconColor: string;
   colors = ['#af3500', '#9c7500', '#a51675', '#1e48d1', '#ff0202', '#3d9415', '#f5f241'];
 
   constructor(private incomeService: IncomesService) {
@@ -22,7 +21,6 @@ export class IncomesTableComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
 }
