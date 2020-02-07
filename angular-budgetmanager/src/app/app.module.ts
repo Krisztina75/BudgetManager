@@ -10,6 +10,8 @@ import { ReportsComponent } from './pages/reports/reports.component';
 import { SavingsComponent } from './pages/savings/savings.component';
 import { IncomesTableComponent } from './pages/incomes-table/incomes-table.component';
 import { SumPipe } from './pipe/sum.pipe';
+import { IncomeVsSpendingComponent } from './pages/income-vs-spending/income-vs-spending.component';
+import { SpendingByCategoryComponent } from './pages/spending-by-category/spending-by-category.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SumPipe } from './pipe/sum.pipe';
     ReportsComponent,
     SavingsComponent,
     IncomesTableComponent,
-    SumPipe
+    SumPipe,
+    IncomeVsSpendingComponent,
+    SpendingByCategoryComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,8 @@ import { ReportsComponent } from './pages/reports/reports.component';
 import { SavingsComponent } from './pages/savings/savings.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { IncomesTableComponent } from './pages/incomes-table/incomes-table.component';
+import { IncomeVsSpendingComponent } from './pages/income-vs-spending/income-vs-spending.component';
+import { SpendingByCategoryComponent } from './pages/spending-by-category/spending-by-category.component';
 
 
 const routes: Routes = [{
@@ -22,6 +24,14 @@ const routes: Routes = [{
 {
   path: 'reports/incomes',
   component: IncomesTableComponent
+},
+{
+  path: 'reports/income-vs-spending',
+  component: IncomeVsSpendingComponent
+},
+{
+  path: 'reports/spending-by-category',
+  component: SpendingByCategoryComponent
 },
 ];
 
