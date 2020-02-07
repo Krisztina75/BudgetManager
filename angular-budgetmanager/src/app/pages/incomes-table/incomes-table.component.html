@@ -43,7 +43,7 @@
             <td>{{item.ID}}</td>
             <td>{{item.RegistrationDate | date}}</td>
             <td>{{item.DateOfPayment | date}}</td>
-            <td class="text-align-right">{{item.Amount}}</td>
+            <td class="text-align-right">{{item.Amount | number: decimal}}</td>
             <td>{{item.Description}}</td>
             <td>{{item.Category}}</td>
           </tr>
