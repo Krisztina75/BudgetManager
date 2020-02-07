@@ -11,6 +11,7 @@ import { Category } from 'src/app/model/category';
 export class IncomesTableComponent implements OnInit {
   allData: Income[] = [];
   allCategories: Category[] = [];
+  
 
   constructor(private incomeService: IncomesService) {
     this.incomeService.getAll().subscribe(incomes => {
