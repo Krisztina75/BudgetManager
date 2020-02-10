@@ -33,14 +33,23 @@ module.exports = class DB {
     return result;
   }
 
-  // async allCostCategories(data) {
-  //   const sql = `
-  //   SELECT '${data.category}' FROM costs
-  //   GROUPBY '${data.category}'
-  //   `;
+  async allCostCategories() {
+    const sql = `
+    SELECT Category, SUM(Amount) as amountByCategory FROM costs
+    GROUP BY Category
+    `;
 
-  //   const result = await this.conn.query(sql);
-  //   console.log(`Kategóriák: ${result}`);
-  //   return result;
-  // }
+    const result = await this.conn.query(sql);
+    return result;
+  }
+
+  async allIncomeCategories() {
+    const sql = `
+    SELECT Category, SUM(Amount) as amountByCategory FROM incomes
+    GROUP BY Category
+    `;
+
+    const result = await this.conn.query(sql);
+    return result;
+  }
 };

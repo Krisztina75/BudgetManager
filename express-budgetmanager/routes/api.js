@@ -16,14 +16,19 @@ router.get('/costs', async (req, res, next) => {
   const costResults = {};
 
   costResults.allCostItem = await db.readCosts();
-  // costResults.categories = await db.allCostCategories();
+  costResults.categories = await db.allCostCategories();
+
   res.json(costResults);
 });
 
 /* GET api/incomes page. */
 router.get('/incomes', async (req, res, next) => {
-  const result = await db.readIncomes();
-  res.json(result);
+  const incomeResults = {};
+
+  incomeResults.allIncomeItem = await db.readIncomes();
+  incomeResults.categories = await db.allIncomeCategories();
+
+  res.json(incomeResults);
 });
 
 module.exports = router;
