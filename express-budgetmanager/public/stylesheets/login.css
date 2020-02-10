@@ -1,0 +1,47 @@
+body {
+    padding-top: 130px;
+    /* padding-bottom: 40px; */
+    font-family: 'Big Shoulders Display', cursive;
+    /* height: 100%; */
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    position: relative;
+    left: 15px;
+    margin: 0;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.login-background {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    background-image: url("./../images/painting.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
