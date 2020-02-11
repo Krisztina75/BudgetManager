@@ -13,6 +13,8 @@ import { SumPipe } from './pipe/sum.pipe';
 import { IncomeVsSpendingComponent } from './pages/income-vs-spending/income-vs-spending.component';
 import { SpendingByCategoryComponent } from './pages/spending-by-category/spending-by-category.component';
 import { ChartsModule } from 'ng2-charts';
+import { CostsDoughnutChartComponent } from './pages/costs-doughnut-chart/costs-doughnut-chart.component';
+import { IncomesDoughnutChartComponent } from './pages/incomes-doughnut-chart/incomes-doughnut-chart.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ChartsModule } from 'ng2-charts';
     SumPipe,
     IncomeVsSpendingComponent,
     SpendingByCategoryComponent,
+    CostsDoughnutChartComponent,
+    IncomesDoughnutChartComponent,
   ],
   imports: [
     BrowserModule,
