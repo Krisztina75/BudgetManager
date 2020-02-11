@@ -14,7 +14,7 @@ router.post('/', async (req, res, next) => {
   const result = await userdb.login(req.body);
 
   if (result.length === 1) {
-    return res.redirect('/api');
+    return res.redirect('http://localhost:4200');
   }
   res.render('login', { title: 'Login' });
 });
