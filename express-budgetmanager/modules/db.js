@@ -33,6 +33,7 @@ module.exports = class DB {
     return result;
   }
 
+
   async allCostCategories() {
     const sql = `
     SELECT Category, SUM(Amount) as amountByCategory FROM costs
@@ -52,4 +53,5 @@ module.exports = class DB {
     const result = await this.conn.query(sql);
     return result;
   }
+
 };
