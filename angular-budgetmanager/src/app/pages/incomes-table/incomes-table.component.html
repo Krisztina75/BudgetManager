@@ -66,10 +66,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let category of allCategories; let i=index">
+          <tr *ngFor="let category of incomeByCategory; let i=index">
             <td>
               <i class="fas fa-square" [ngStyle]="{'color':colors[i]}" style="font-size:10px;padding:2px"></i>
-              {{category.Category}}</td>
+              {{category.categoryName}}</td>
             <td class="amount">{{category.amountByCategory | number: decimal}} Ft</td>
           </tr>
           <tr class="total">
