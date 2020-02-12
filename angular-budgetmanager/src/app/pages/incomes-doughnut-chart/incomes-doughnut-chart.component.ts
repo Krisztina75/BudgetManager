@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { Label, SingleDataSet } from 'ng2-charts';
+import { IncomesService } from 'src/app/service/incomes.service';
+import { Category } from 'src/app/model/category';
 
 @Component({
   selector: 'app-incomes-doughnut-chart',
@@ -8,12 +10,23 @@ import { Label, SingleDataSet } from 'ng2-charts';
   styleUrls: ['./incomes-doughnut-chart.component.css']
 })
 export class IncomesDoughnutChartComponent implements OnInit {
+  incomeByCategory: Category[] = [];
 
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: SingleDataSet = [350, 450, 100];
+  public doughnutChartLabels: Label[] = [];
+  public doughnutChartData: SingleDataSet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   public doughnutChartType: ChartType = 'doughnut';
 
-  constructor() { }
+  constructor(private incomeService: IncomesService) {
+    this.incomeService.getAll().subscribe(incomes => {
+      this.incomeByCategory = incomes.incomeByCategory;
+      this.doughnutChartLabels = this.incomeByCategory.map(item => {
+        return item.categoryName
+      })
+      this.doughnutChartData = this.incomeByCategory.map(item => {
+        return item.amountByCategory
+      })
+    })
+  }
 
   ngOnInit() {
   }

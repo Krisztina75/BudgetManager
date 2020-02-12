@@ -13,8 +13,9 @@ export class CostsDoughnutChartComponent implements OnInit {
   costByCategory: Category[] = [];
 
   public doughnutChartLabels: Label[] = [];
-  public doughnutChartData: SingleDataSet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   public doughnutChartType: ChartType = 'doughnut';
+  public doughnutChartData: SingleDataSet = [1, 2, 3, 4, 5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14, 15, 16, 17, 18];
 
   constructor(private costService: CostsService) {
     this.costService.getAll().subscribe(costs => {
