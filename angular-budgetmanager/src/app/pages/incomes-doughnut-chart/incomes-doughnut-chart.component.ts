@@ -15,6 +15,19 @@ export class IncomesDoughnutChartComponent implements OnInit {
   public doughnutChartLabels: Label[] = [];
   public doughnutChartData: SingleDataSet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   public doughnutChartType: ChartType = 'doughnut';
+  public doughnutChartOptions = {
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 20,
+        bottom: 0
+      }
+    },
+    legend: {
+      position: 'right'
+    }
+  };
 
   constructor(private incomeService: IncomesService) {
     this.incomeService.getAll().subscribe(incomes => {

@@ -16,6 +16,19 @@ export class CostsDoughnutChartComponent implements OnInit {
   public doughnutChartType: ChartType = 'doughnut';
   public doughnutChartData: SingleDataSet = [1, 2, 3, 4, 5, 6, 7, 8, 9,
     10, 11, 12, 13, 14, 15, 16, 17, 18];
+  public doughnutChartOptions = {
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 20,
+        bottom: 0
+      }
+    },
+    legend: {
+      position: 'right'
+    }
+  };
 
   constructor(private costService: CostsService) {
     this.costService.getAll().subscribe(costs => {
