@@ -1,3 +1,4 @@
 export class Category {
-    name: string;
+    categoryName: string;
+    amountByCategory: number;
 }
